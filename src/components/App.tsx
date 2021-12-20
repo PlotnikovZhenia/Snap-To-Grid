@@ -16,7 +16,7 @@ const App=()=> {
 
   const [widthnumber,setWidthnumber]=useState(100)
   const [heightnumber,setHeightnumber]=useState(100)
-  const [changeItemFirst, setChangeItemFirst]=useState(false);
+  const [changeItemFirst, setChangeItemFirst]=useState(true);
   const [changeItemSecond, setChangeItemSecond]=useState(false);
 
   const moveCard=(item:number,changeItemFirst:boolean,changeItemSecond:boolean)=>{
@@ -66,7 +66,7 @@ const App=()=> {
       <Box
       widthnumber={widthnumber}
       heightnumber={heightnumber} 
-      key={item} card={changeItemFirst?index === item:null} card2={indexTwo === item}  moveCard={()=>moveCard(item,changeItemFirst,changeItemSecond)}/>
+      key={item} card={changeItemFirst?index === item:null} card2={changeItemSecond?indexTwo === item:null}  moveCard={()=>moveCard(item,changeItemFirst,changeItemSecond)}/>
     );
   });
   return (

@@ -1,0 +1,59 @@
+.header {
+  margin: 20px 50px;
+  padding: 10px;
+}
+.header h1{
+  text-align: center;
+}
+.header input{
+  margin-bottom: 20px;
+}
+.navbar{
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  background-color: #bbb;
+}
+.navbar .box {
+  border:none;
+  margin: 20px;
+}
+.navbarButtons {
+  background: blanchedalmond;
+}
+.navbarButtons h3{
+  text-align: center;
+}
+.navbarButtonsFirst{
+  display: flex;
+  margin: 20px;
+}
+.navbarButtonsFirst button{
+background: beige;
+width: 250px;
+margin-right: 10px;
+}
+.navbarButtonsSecond{
+  display: flex;
+  margin: 20px;
+}
+.navbarButtonsSecond button{
+  background: beige;
+  width: 250px;
+  margin-right: 10px;
+  }
+.app {
+  width: 1024px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+}
